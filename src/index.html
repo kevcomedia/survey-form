@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>freeCodeCamp Project - Survey Form</title>
+</head>
+<body>
+  <h1 id="title">So You Want to Be Reborn in a Fantasy World?</h1>
+  <p id="description">Suppose you were given the chance to be reborn in some fantasy world. What do you want to be?</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Your New Name</label>
+    <input id="name" name="name" placeholder="Who do you want to be known as" required>
+
+    <label for="email" id="email-label">Your New Email</label>
+    <input id="email" name="email" type="email" placeholder="Yes, fantasy worlds have email too" required>
+
+    <label for="number" id="number-label">Your New Age</label>
+    <input id="number" name="age" type="number" min="1" max="5000" placeholder="How old are you?" required>
+
+    <label for="dropdown" required>Your Race</label>
+    <select id="dropdown" name="race">
+      <option value="Human">Human</option>
+      <option value="Beastfolk">Beastfolk</option>
+      <option value="Dwarf">Dwarf</option>
+      <option value="Elf">Elf</option>
+      <option value="Orc">Orc</option>
+      <option value="Giant">Giant</option>
+    </select>
+
+    <fieldset>
+      <legend>Where would you want to live?</legend>
+      <label>
+        <input type="radio" name="living" value="town"> Some town
+      </label>
+      <label>
+        <input type="radio" name="living" value="island"> Some town on an island
+      </label>
+      <label>
+        <input type="radio" name="living" value="port city"> A port city
+      </label>
+      <label>
+        <input type="radio" name="living" value="cave"> In a cave
+      </label>
+      <label>
+        <input type="radio" name="living" value="forest"> In a forest
+      </label>
+      <label>
+        <input type="radio" name="living" value="somewhere"> Somewhere else
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What will be your hobbies?</legend>
+      <label>
+        <input type="checkbox" name="hobbies" value="fishing"> Fishing
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" value="farming slimes"> Farming slimes
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" value="potions"> Making potions
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" value="raids"> Doing raids
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" value="building things"> Building things
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" value="magic"> Playing with magic
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" value="other"> Something else
+      </label>
+    </fieldset>
+
+    <label for="message">
+      What message do you want to tell the reborn you?
+    </label>
+    <textarea id="message" name="message"></textarea>
+
+    <button id="submit">Submit</button>
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
