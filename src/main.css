@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #5bba6f;
+  color: #f0f8f1;
+  font: 2rem 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+  font-family: 'Smythe', cursive;
+  font-weight: normal;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+form {
+  background-color: #fff;
+  border-radius: .3rem;
+  border-top: .5rem solid #137547;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+  color: #09110b;
+  display: grid;
+  grid-template-areas:
+    'basic'
+    'living'
+    'hobbies'
+    'message'
+    'submit';
+  grid-gap: 2rem;
+  margin: auto;
+  max-width: 100rem;
+  padding: 4rem;
+}
+
+@media screen and (min-width: 43.75em) {
+  form {
+    grid-template-areas:
+    'basic basic'
+    'living hobbies'
+    'message message'
+    'submit submit';
+  }
+}
+
+.basic-info {
+  display: grid;
+  grid-auto-rows: 3rem;
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+  grid-area: basic;
+}
+
+.basic-info input,
+.basic-info select {
+  width: 100%;
+}
+
+@media screen and (min-width: 43.75em) {
+  .basic-info {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .basic-info label {
+    text-align: right;
+    vertical-align: baseline;
+  }
+
+  .basic-info input,
+  .basic-info select {
+    width: 60%;
+  }
+}
+
+fieldset {
+  border-radius: .3rem;
+  border: .1rem solid #5bba6f;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+fieldset label {
+  width: 80%;
+  margin: auto;
+}
+
+.living {
+  grid-area: living;
+}
+
+.hobbies {
+  grid-area: hobbies;
+}
+
+.message {
+  grid-area: message;
+  display: flex;
+  flex-direction: column;
+}
+
+.message textarea {
+  resize: none;
+}
+
+.submit {
+  grid-area: submit;
+  justify-self: center;
+}
+
+footer {
+ text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
