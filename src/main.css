@@ -9,5 +9,10 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font: 2rem 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+  font-family: 'Smythe', cursive;
+  font-weight: normal;
 }
