@@ -105,6 +105,12 @@ fieldset label {
 
 .message {
   grid-area: message;
+  display: flex;
+  flex-direction: column;
+}
+
+.message textarea {
+  resize: none;
 }
 
 .submit {
