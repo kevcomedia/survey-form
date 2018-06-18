@@ -9,6 +9,8 @@ html {
 }
 
 body {
+  background-color: #5bba6f;
+  color: #f0f8f1;
   font: 2rem 'Open Sans Condensed', sans-serif;
 }
 
@@ -20,4 +22,11 @@ h1 {
 
 .description {
   text-align: center;
+}
+
+form {
+  background-color: #fff;
+  color: #09110b;
+  margin: auto;
+  max-width: 100rem;
 }
