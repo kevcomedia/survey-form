@@ -15,4 +15,9 @@ body {
 h1 {
   font-family: 'Smythe', cursive;
   font-weight: normal;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
 }
