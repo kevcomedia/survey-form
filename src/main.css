@@ -34,3 +34,31 @@ form {
   max-width: 100rem;
   padding: 4rem;
 }
+
+.basic-info {
+  display: grid;
+  grid-auto-rows: 3rem;
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.basic-info input,
+.basic-info select {
+  width: 100%;
+}
+
+@media screen and (min-width: 43.75em) {
+  .basic-info {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .basic-info label {
+    text-align: right;
+    vertical-align: baseline;
+  }
+
+  .basic-info input,
+  .basic-info select {
+    width: 60%;
+  }
+}

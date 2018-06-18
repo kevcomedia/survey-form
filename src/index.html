@@ -12,24 +12,26 @@
   <p class="description" id="description">Suppose you were given the chance to be reborn in some fantasy world. What do you want to be?</p>
 
   <form id="survey-form">
-    <label for="name" id="name-label">Your New Name</label>
-    <input id="name" name="name" placeholder="Who do you want to be known as" required>
-
-    <label for="email" id="email-label">Your New Email</label>
-    <input id="email" name="email" type="email" placeholder="Yes, fantasy worlds have email too" required>
-
-    <label for="number" id="number-label">Your New Age</label>
-    <input id="number" name="age" type="number" min="1" max="5000" placeholder="How old are you?" required>
-
-    <label for="dropdown" required>Your Race</label>
-    <select id="dropdown" name="race">
-      <option value="Human">Human</option>
-      <option value="Beastfolk">Beastfolk</option>
-      <option value="Dwarf">Dwarf</option>
-      <option value="Elf">Elf</option>
-      <option value="Orc">Orc</option>
-      <option value="Giant">Giant</option>
-    </select>
+    <div class="basic-info">
+      <label for="name" id="name-label">Your New Name</label>
+      <input id="name" name="name" placeholder="Who do you want to be known as" required>
+  
+      <label for="email" id="email-label">Your New Email</label>
+      <input id="email" name="email" type="email" placeholder="Yes, fantasy worlds have email too" required>
+  
+      <label for="number" id="number-label">Your New Age</label>
+      <input id="number" name="age" type="number" min="1" max="5000" placeholder="How old are you?" required>
+  
+      <label for="dropdown" required>Your Race</label>
+      <select id="dropdown" name="race">
+        <option value="Human">Human</option>
+        <option value="Beastfolk">Beastfolk</option>
+        <option value="Dwarf">Dwarf</option>
+        <option value="Elf">Elf</option>
+        <option value="Orc">Orc</option>
+        <option value="Giant">Giant</option>
+      </select>
+    </div>
 
     <fieldset>
       <legend>Where would you want to live?</legend>
