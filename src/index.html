@@ -33,7 +33,7 @@
       </select>
     </div>
 
-    <fieldset>
+    <fieldset class="living">
       <legend>Where would you want to live?</legend>
       <label>
         <input type="radio" name="living" value="town"> Some town
@@ -55,7 +55,7 @@
       </label>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="hobbies">
       <legend>What will be your hobbies?</legend>
       <label>
         <input type="checkbox" name="hobbies" value="fishing"> Fishing
@@ -80,12 +80,13 @@
       </label>
     </fieldset>
 
-    <label for="message">
-      What message do you want to tell the reborn you?
-    </label>
-    <textarea id="message" name="message"></textarea>
-
-    <button id="submit">Submit</button>
+    <div class="message">
+      <label for="message">
+        What message do you want to tell the reborn you?
+      </label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <button class="submit" id="submit">Submit</button>
   </form>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
