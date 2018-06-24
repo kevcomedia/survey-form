@@ -11,16 +11,17 @@ html {
 body {
   background-color: #5bba6f;
   color: #f0f8f1;
-  font: 2rem 'Open Sans Condensed', sans-serif;
+  font: 1.6rem 'Open Sans', sans-serif;
 }
 
 h1 {
-  font-family: 'Smythe', cursive;
-  font-weight: normal;
+  font: 400 4rem 'Smythe', cursive;
   text-align: center;
 }
 
 .description {
+  color: #fff;
+  font-weight: 400;
   text-align: center;
 }
 
