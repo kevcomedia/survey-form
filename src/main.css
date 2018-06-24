@@ -57,7 +57,7 @@ form {
 .basic-info {
   display: grid;
   grid-auto-rows: 3rem;
-  grid-gap: 1rem;
+  grid-gap: 1rem 4rem;
   margin-bottom: 2rem;
   grid-area: basic;
 }
