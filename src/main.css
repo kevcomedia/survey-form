@@ -60,7 +60,7 @@ form {
 
 .basic-info {
   display: grid;
-  grid-auto-rows: 3rem;
+  grid-auto-rows: 3.5rem;
   grid-gap: 1rem 4rem;
   margin-bottom: 2rem;
   grid-area: basic;
@@ -72,8 +72,14 @@ form {
 
 .basic-info input,
 .basic-info select {
+  background-color: #fff;
+  border-bottom: .2rem solid #5bba6f;
+  border-left: none;
+  border-right: none;
+  border-top: none;
   font-family: var(--page-font);
   font-size: 1.4rem;
+  padding: .5rem;
   width: 100%;
 }
 
