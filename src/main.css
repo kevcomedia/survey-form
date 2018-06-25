@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --page-font: 'Open Sans', sans-serif;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -11,7 +15,7 @@ html {
 body {
   background-color: #5bba6f;
   color: #f0f8f1;
-  font: 1.6rem 'Open Sans', sans-serif;
+  font: 1.6rem var(--page-font);
 }
 
 h1 {
@@ -68,6 +72,8 @@ form {
 
 .basic-info input,
 .basic-info select {
+  font-family: var(--page-font);
+  font-size: 1.4rem;
   width: 100%;
 }
 
@@ -82,7 +88,7 @@ form {
 
   .basic-info input,
   .basic-info select {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -114,6 +120,7 @@ fieldset label {
 }
 
 .message textarea {
+  font-family: var(--page-font);
   resize: none;
 }
 
