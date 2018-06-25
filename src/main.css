@@ -127,6 +127,8 @@ fieldset label {
 
 .message textarea {
   font-family: var(--page-font);
+  margin-top: 1rem;
+  padding: 1.5rem;
   resize: none;
 }
 
