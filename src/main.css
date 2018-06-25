@@ -133,8 +133,24 @@ fieldset label {
 }
 
 .submit {
+  background-color: #5bba6f;
+  border-radius: .3rem;
+  border: none;
+  box-shadow: 0 .4rem .4rem rgba(0,0,0,.3);
+  color: #fff;
+  display: inline-block;
+  font-family: var(--page-font);
+  font-size: 1.6rem;
   grid-area: submit;
   justify-self: center;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  transition: all .3s ease-out;
+}
+
+.submit:focus,
+.submit:hover {
+  background-color: #137547;
 }
 
 footer {
