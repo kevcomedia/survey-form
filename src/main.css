@@ -62,6 +62,10 @@ form {
   grid-area: basic;
 }
 
+.basic-info label {
+  align-self: center;
+}
+
 .basic-info input,
 .basic-info select {
   width: 100%;
@@ -74,7 +78,6 @@ form {
 
   .basic-info label {
     text-align: right;
-    vertical-align: baseline;
   }
 
   .basic-info input,
