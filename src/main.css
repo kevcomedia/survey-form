@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --page-font: 'Open Sans', sans-serif;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -11,16 +15,17 @@ html {
 body {
   background-color: #5bba6f;
   color: #f0f8f1;
-  font: 2rem 'Open Sans Condensed', sans-serif;
+  font: 1.6rem var(--page-font);
 }
 
 h1 {
-  font-family: 'Smythe', cursive;
-  font-weight: normal;
+  font: 400 4rem 'Smythe', cursive;
   text-align: center;
 }
 
 .description {
+  color: #fff;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -55,14 +60,26 @@ form {
 
 .basic-info {
   display: grid;
-  grid-auto-rows: 3rem;
-  grid-gap: 1rem;
+  grid-auto-rows: 3.5rem;
+  grid-gap: 1rem 4rem;
   margin-bottom: 2rem;
   grid-area: basic;
 }
 
+.basic-info label {
+  align-self: center;
+}
+
 .basic-info input,
 .basic-info select {
+  background-color: #fff;
+  border-bottom: .2rem solid #5bba6f;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: var(--page-font);
+  font-size: 1.4rem;
+  padding: .5rem;
   width: 100%;
 }
 
@@ -73,12 +90,11 @@ form {
 
   .basic-info label {
     text-align: right;
-    vertical-align: baseline;
   }
 
   .basic-info input,
   .basic-info select {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -110,12 +126,31 @@ fieldset label {
 }
 
 .message textarea {
+  font-family: var(--page-font);
+  margin-top: 1rem;
+  padding: 1.5rem;
   resize: none;
 }
 
 .submit {
+  background-color: #5bba6f;
+  border-radius: .3rem;
+  border: none;
+  box-shadow: 0 .4rem .4rem rgba(0,0,0,.3);
+  color: #fff;
+  display: inline-block;
+  font-family: var(--page-font);
+  font-size: 1.6rem;
   grid-area: submit;
   justify-self: center;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  transition: all .3s ease-out;
+}
+
+.submit:focus,
+.submit:hover {
+  background-color: #137547;
 }
 
 footer {
